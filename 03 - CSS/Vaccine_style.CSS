@@ -1,0 +1,13 @@
+html{
+    font-family:'Times New Roman', Times, serif;
+    background-image: url("https://raw.githubusercontent.com/LaunchX-InnovaccionVirtual/FrontEnd-Mision/main/03%20-%20CSS/practica/landingVacunación.png");
+    background-size: cover;
+    height: 5800px;
+    width: 1920px;
+}
+.titulo{
+    color:blue;
+    font-size: large;
+    text-align: initial;
+}
+
