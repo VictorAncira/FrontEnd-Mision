@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pokedex_Em1.css">
+    <link rel="stylesheet" href="Pokedex_Em2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>PokedexWeb</title>
+</head>
+<body>
+    <main class="pokedex">
+        <section class="header">
+            <div class="header__bigCircle">
+                <div class="header__bigCircle__cristal"></div>
+            </div>        
+            <div class="header__circle header__circle-red"></div>
+            <div class="header__circle header__circle-green"></div>
+            <div class="header__circle header__circle-yellow"></div>
+        </section>
+        <section class="screen">
+            <section class="screen__image">
+                <div class="pokemon__container ">
+                    <p id="loadingDialog" class="loadingDialog-hide "></p>
+                    <img alt="Pokmemon" id="imageScreen">   
+                    <span id="pokemonNameText"></span>           
+                </div>                              
+                <div class="pokemon__information">
+                    <p>Height: <span id="pokemonHeightValue">?</span> Mts</p>          
+                    <p>Weight: <span id="pokemonWeightValue">?</span> Kg </p>                    
+                </div>
+            </section>
+        </section>
+        <section class="inputs">
+            <div class="inputs__left">
+                <div class="inputs__buttons">
+                    <button class="mainButton"></button>
+                    <button class="largeButton largeButton-red"></button>
+                    <button class="largeButton largeButton-blue"></button> 
+                </div>
+                <div class="greenRect"></div>
+            </div>            
+            <div class="direction__buttons">
+                <div class="direction__buttons__bottom">
+                    <div class="direction__buttons__bottom__vertical"></div>
+                    <div class="direction__buttons__bottom__horizontal"></div>                    
+                </div>                              
+                <div class="direction__buttons__up">
+                    <button class="up" id="keyUp"></button>
+                    <button class="right" id="keyRight"></button>
+                    <button class="bottom" id="keyDown"></button>
+                    <button class="left" id="keyLeft"></button>
+                </div>
+            </div>        
+        </section>
+        <section class="search">
+            <label for="pokemon">Pokemon: <input type="text" name="pokemon" id="pokemonInput"></label>          
+            <button type="submit" id="search"><span class="material-icons">search</span></button>
+        </section>
+    </main>
+    <section class="panel">
+        <section class="panel__screen">
+            <div class="panel__screen__innner">
+                <div class="types">
+                    <Label>Types</Label>
+                    <ul id="listTypes"></ul>
+                </div>
+                <div class="movs">
+                    <Label>Moves:</Label>
+                    <ul id="listMovs"></ul>
+                </div>
+                <div class="stats">
+                    <Label>Stats:</Label>    
+                    <ul id="listStats">
+                                         
+                    </ul>                
+                </div>                
+            </div>         
+        </section>        
+    </section>
+    <script src="Pokedex_Em.js"></script>
+</body>
+</html>
