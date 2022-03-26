@@ -82,8 +82,8 @@ async function searchPokemon(nameOrId){
 
     setName(pokemon.name)
     setImage(pokemon.sprites.front_default)  
-    setPokemonHeightValue(pokemon.height)
-    setPokemonWeightValue(pokemon.weight)  
+    setPokemonHeightValue(pokemon.height/10)
+    setPokemonWeightValue(pokemon.weight/10)  
     setListTypes(pokemon.types)
     setListMovs(pokemon.moves)
     setListStats(pokemon.stats)
@@ -112,7 +112,6 @@ async function loadPokemon(){
     loadingDialog.setAttribute('class','loadingDialog-hide')
     loadingDialog.innerHTML = 'Cargando pokemon...'    
 }
-
 function loadPokemonEvol(evolCount){
     loadingDialog.setAttribute('class','loadingDialog-show')
     loadingDialog.innerText = 'Cargando evolucion...'
@@ -196,10 +195,10 @@ function setListStats(stats){
     });
 }
 function setPokemonHeightValue(value){
-    pokemonHeightValue.innerHTML = value
+    (pokemonHeightValue.innerHTML) = value
 }
 function setPokemonWeightValue(value){
-    pokemonWeightValue.innerHTML = value
+    (pokemonWeightValue.innerHTML) = value
 }
 function resetEvolvesData(){    
     evolves = [];

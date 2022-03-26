@@ -1,15 +1,17 @@
 .panel{
-    background-color: #ce1131;
+    background-color: #e6391b;
     border-left: 1px solid #730403;
     width: 100vw;    
-    max-width: 390px;
+    max-width: 450px;
     padding: 20px;
     height: 100vh;
-    min-height: 625px;
-    max-height: 750px;
+    min-height: 550px;
+    max-height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    border: 5px  solid black;
 }
 @media only screen and (max-width: 750px) {
     .panel{
@@ -23,7 +25,7 @@
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .panel__screen__innner{
     background-color: #eff144f3;
@@ -49,7 +51,7 @@
 .types ul li{
     margin-right: 10px;
     padding: 4px;
-    background-color: rgb(231, 28, 204);      
+    background-color: rgb(212, 46, 16);      
 }
 .types ul:last-child{
     margin-right: 0;
@@ -69,7 +71,8 @@
     padding: 0;
     height: 200px;
     overflow-y: auto;
-    color: #030303;
+    color: #000000;
+    background-color: #e0b011;
 }
 .stats{
     color: rgb(3, 3, 3);
@@ -100,7 +103,7 @@
     position: relative;
 }
 .stat__bar__inner{
-    background-color: #fafafa;
+    background-color: #ee1414;
     width: 100%;
     position: absolute;
     bottom: 0;
